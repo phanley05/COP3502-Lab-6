@@ -39,6 +39,7 @@ def encode(code):
     
     return(final)
 
+
 def decode(code):
     final = ''
     
@@ -49,3 +50,13 @@ def decode(code):
     #-1 becomes 9, -2 becomes 8, etc. 
 
     return(final)
+
+
+def main():
+    global loop
+    while loop == 1:
+        menu()
+
+
+if __name__ == "__main__":
+    main()
