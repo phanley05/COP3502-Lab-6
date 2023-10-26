@@ -18,11 +18,14 @@ def menu():
             print("Your password has been encoded and stored!")
             print("")
         case "2":
-            print("The encoded password is " + code + ", and the original password is " + decode(code) + ".")
+            if(code != "empty"):
+                print("The encoded password is " + code + ", and the original password is " + decode(code) + ".")
+            else:
+                print("No code provided! You must encode something first!")
             print("")
         case "3":
             loop = 0
-        case "_":
+        case _:
             print("Invalid input! Please choose a number between one and three.")
             print("")
 
