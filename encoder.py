@@ -25,7 +25,7 @@ def menu():
             print("")
         case "3":
             loop = 0
-        case "_":
+        case _:
             print("Invalid input! Please choose a number between one and three.")
             print("")
 
