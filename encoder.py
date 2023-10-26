@@ -42,14 +42,17 @@ def encode(code):
 
 def decode(code):
     final = ''
-    
-    #HERE
-    #Make the decoder here.
-    #It needs to subtract three from each of the digits of the input, 'code'.
-    #If that would make it negative it should loop back around.
-    #-1 becomes 9, -2 becomes 8, etc. 
+    length = len(str(code))
+    num = int
+    while length != 0:
+        num = (int(str(code)[0:1])) - 3
+        if num < 0:
+            num = 10 + num
+        final = final + str(num)
+        code = str(code)[1:]
+        length -= 1
+    return final
 
-    return(final)
 
 
 def main():
